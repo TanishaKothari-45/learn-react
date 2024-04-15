@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <title>Learn react</title>
+</head>
+
+<body>
+    <div>
+        this remains same on rendering as react is rendered in root only
+    </div>
+    <div id="root">
+        hello root 
+    </div>
+    
+    <!-- it will get replaced by root.render not appended -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+    <!-- CDN - it hosts react inject react into js project through cdn links -->
+        <!-- but its not a good method as everytime we'll have to make a call to unpkg its better to instll it through npm and use from node_modules -->
+
+    <script type="module"src="./App.js"></script>
+    <!-- if we add any import export statment in our componnet then we hace to add type module to tell that it is not browser script , diff way to read it -->
+</body>
+
+</html>
